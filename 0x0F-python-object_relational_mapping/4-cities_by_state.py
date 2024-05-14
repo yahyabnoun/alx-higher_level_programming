@@ -10,6 +10,6 @@ if __name__ == "__main__":
     cur.execute("SELECT * FROM cities")
     rows = cur.fetchall()
     for row in rows:
-        print(row)
+        print(row.states)
     cur.close()
     db.close()
