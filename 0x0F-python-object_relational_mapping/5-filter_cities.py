@@ -11,6 +11,6 @@ if __name__ == "__main__":
                 cities JOIN states ON states.id = cities.state_id where states.name=%s""",(sys.argv[4],))
     rows = cur.fetchall()
     tmp = list(row[0] for row in rows)
-    print(tmp)
+    print(*tmp, sep=", ")
     cur.close()
     db.close()
