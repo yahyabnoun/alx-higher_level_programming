@@ -10,7 +10,6 @@ if __name__ == "__main__":
     cur.execute("""SELECT cities.name FROM 
                 cities JOIN states ON states.id = cities.state_id where states.name=%s""",(sys.argv[4],))
     rows = cur.fetchall()
-    for row in rows:
-        print(row)
+    print(rows)
     cur.close()
     db.close()
