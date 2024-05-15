@@ -6,9 +6,8 @@ from sqlalchemy.ext.declarative import declarative_base
 mymetadata = MetaData()
 Base = declarative_base(metadata=mymetadata)
 
-if __name__ == "__main__":
 
-    class State(Base):
-        __tablename__ = 'States'
-        id = Column(Integer, primary_key=True,nullable=False, unique=True)
-        name =  Column(String(128),nullable=False)
+class State(Base):
+    __tablename__ = 'States'
+    id = Column(Integer, primary_key=True,nullable=False, unique=True)
+    name =  Column(String(128),nullable=False)
