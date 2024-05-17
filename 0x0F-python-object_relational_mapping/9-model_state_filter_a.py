@@ -14,5 +14,5 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    for row in session.query(State).filter(User.name.ilike('%a%')):
+    for row in session.query(State).filter(User.name.ilike('%a%')).all():
         print(row.id,row.name,sep=": ")
