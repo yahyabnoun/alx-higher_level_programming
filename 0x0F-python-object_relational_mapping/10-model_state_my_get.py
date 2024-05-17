@@ -18,5 +18,5 @@ if __name__ == "__main__":
     
     if query is None:
         print("Not found")
-    else :
+    else:
         print(query.id)
