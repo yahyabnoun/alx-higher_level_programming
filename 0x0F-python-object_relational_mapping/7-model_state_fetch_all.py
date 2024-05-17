@@ -16,5 +16,3 @@ if __name__ == "__main__":
     session = Session()
     for row in session.query(State).all():
         print(row.id,row.name,sep=": ")
-
-    
