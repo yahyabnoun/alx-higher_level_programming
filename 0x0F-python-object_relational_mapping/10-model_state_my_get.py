@@ -19,4 +19,4 @@ if __name__ == "__main__":
     if query is None:
         print("Not found")
     else:
-        print(query.id)
+        print(query)
