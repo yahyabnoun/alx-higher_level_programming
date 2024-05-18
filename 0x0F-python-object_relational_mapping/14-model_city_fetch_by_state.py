@@ -8,7 +8,6 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 import sys
 
-
 if __name__ == "__main__":
     engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'
                            .format(sys.argv[1], sys.argv[2], sys.argv[3]))
@@ -18,4 +17,3 @@ if __name__ == "__main__":
     querys = session.query(State.name, City.id, City.name).filter(City.state_id == State.id)
     for state_name, city_id, city_name in querys:
         print(f"{state_name}: ({city_id}) {city_name}")
-
