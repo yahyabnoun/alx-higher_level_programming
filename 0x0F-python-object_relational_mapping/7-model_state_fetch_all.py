@@ -15,4 +15,4 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     for row in session.query(State).all():
-        print(row.id,row.name,sep=": ")
+        print(row.id, row.name, sep=": ")
