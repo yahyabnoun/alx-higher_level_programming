@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""  
-lists all states table of hbtn_0e_0_usa 
+"""
+lists all states table of hbtn_0e_0_usa
 where name matches the argument 
 """
 import MySQLdb
