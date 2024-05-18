@@ -17,5 +17,5 @@ if __name__ == "__main__":
     session = Session()
     querys = session.query(State.name, City.id, City.name).filter(City.state_id == State.id)
     for query in querys:
-        print(f"{query.name}: ({query.id}) {query.City.name}")
+        print(f"{query.state.name}: ({query.id}) {query.name}")
 
