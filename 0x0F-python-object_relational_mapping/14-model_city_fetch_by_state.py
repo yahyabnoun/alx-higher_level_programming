@@ -18,5 +18,4 @@ if __name__ == "__main__":
     querys = session.query(State.name, City.id, City.name).filter(City.state_id == State.id)
     for i in querys:
         print(i)
-    session.commit()
 
