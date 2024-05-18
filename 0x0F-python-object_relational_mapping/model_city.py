@@ -4,6 +4,7 @@ Contains ctate class and Base, an instance of declarative_base()
 """
 from sqlalchemy import Column, Integer, String, ForeignKey
 from model_state import Base
+from sqlalchemy.orm import relationship
 
 class City(Base):
     """
