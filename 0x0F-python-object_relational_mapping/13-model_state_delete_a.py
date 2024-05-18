@@ -14,7 +14,7 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    querys = session.query(State).filter(State.name.ilike('%a%'))
+    querys = session.query(State).filter(State.name.like('%a%'))
     for query in querys:
         session.delete(query)
     session.commit()
