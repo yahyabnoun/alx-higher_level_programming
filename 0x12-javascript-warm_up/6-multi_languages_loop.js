@@ -1,6 +1,7 @@
 #!/usr/bin/node
 
-const { argv } = require('process');
-const num = parseInt(argv[2]);
+// ['C is fun', 'Python is cool', 'JavaScript is amazing'].forEach((e) => console.log(e));
 
-console.log(Number.isInteger(num) ? `My number: ${num}` : 'Not a number');
+const msg = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
+
+msg.forEach((element) => console.log(element));
